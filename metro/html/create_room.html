@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles_creating_room.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <title>Metopoly</title>
+</head>
+<body>
+    <div class="setting_container">
+        <div class="setting_title">количество игроков</div>
+        <div class="counter_container" id="amount_players">2</div>
+        <div class="array_container">
+            <div id="up_arrow_container">
+                <img src="../media/images/icons/arrow.png" alt="" id="up_arrow">
+            </div>
+            <div id="down_arrow_container">
+                <img src="../media/images/icons/arrow.png" alt="" id="down_arrow">
+            </div>
+        </div>
+    </div>
+
+    <div class="setting_container">
+        <div class="setting_title">стартовый бюджет</div>
+        
+        <div class="slider-container">
+            <input class="slider" type="range" min="500" max="2500" value="1000">
+            <span class="counter_container" id="slider_value">1000</span>
+        </div>
+    </div>
+    
+    <div class="setting_container">
+        <div class="setting_title">выберете свой цвет:</div>
+        <br>
+        <div class="colors_selection">
+            <div class="color_box" style="background-color: rgb(169, 28, 28);"></div>
+            <div class="color_box" style="background-color: rgb(30, 108, 211);"></div>
+            <div class="color_box" style="background-color: rgb(188, 171, 35);"></div>
+            <div class="color_box" style="background-color: rgb(26, 124, 19);"></div>
+            <div class="color_box" style="background-color: rgb(195, 16, 153);"></div>
+            <div class="color_box" style="background-color: rgb(0, 255, 187);"></div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/room/script_create_room.js"></script>
+</body>
+</html>
