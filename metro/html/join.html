@@ -3,23 +3,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/join.css">
+    <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=El+Messiri:wght@400..700"/>
+    <title>Войти в игру</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mosmetro.svg/2560px-Mosmetro.svg.png">
 </head>
 <body>
+    <div class="container">
+    
+        <div class="topnav">
+          <a class="click" href="../html/index.html" style="padding: 0 20px 0 0;"><img src="../media/images/logo.svg" width="150" height="40" position="relative" left="0"></a>
+          <a class = "click" href="./index.html">О проекте</a>
+          <a class = "click" href="./join.html" >Войти в игру</a>
+          <a class = "click" href="./create_room.html" >Новая игра</a>
+          <a class = "click" href="./home.html" >Мой профиль</a>
+        </div>
+      </div>
     <center>
     <div class = 'container_reg'>
-    <div style="padding-top: 10px;"><h1 style="margin-top: 10px;">Присоединиться</h1></div>
+        <img src="../media/images/logo.svg" width="300" height="100">
     <form method="post">
-        <input type="text" id="name" name="name" placeholder="ID комнаты">
+        <input type="text" id="room_id" name="room_id" placeholder="Код комнаты">
 
-        <input type="password" id="password" name="password" placeholder="Пароль">
-
-        <div class="wrapper">
-            <a href="#" style="margin-top: 60px;"><span>Войти</span></a>
-          </div>  
-
-        
+        <input type="password" id="room_password" name="room_password" placeholder="Пароль комнаты">
+          <a href="../html/room.html/#" class = "btn"><span>Войти</span></a>
     </form>
-  
+      
     </div>
     </center>
 </body>

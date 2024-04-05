@@ -21,14 +21,17 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #2b1e1e00;
-  position:absolute
-  
-}
+  background-color: #ffffff76;
+  position:absolute;
+  width:100%;
 
+}
 .topnav a.click {
   float: left;
-  color: #f2f2f2;
+  color: #ffffff;
+  height: 100%;
+  width: 10%;
+  position: relative;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -38,14 +41,15 @@ body {
 }
 
 .topnav a.click:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #b5e4f487;
+  color: rgb(255, 255, 255);
 }
 
 .topnav a.click.active {
 
-  color: white;
+  color: rgb(250, 250, 250);
 }
+
 
 
 
