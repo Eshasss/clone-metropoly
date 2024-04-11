@@ -1,72 +1,75 @@
+*{
+  margin:0 ;
+  padding:0;
+}
+
 html{
   min-height: 100%;
+  /* height: 100%; */
 }
 body {
-    font-family: "Lucida Console", "Courier New", monospace;
-    background-position: no-repeat;
-    background-attachment: fixed;
-    background-image: url(../media/images/background2.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+
+  background-color: rgb(2, 7, 20);
+  font-family: "Lucida Console", "Courier New", monospace;
+  /* font-style: inherit; */
+  /* font-family: Helvetica; */
+  font-weight:900;
+  background-image: url(../media/images/main_backgound.jpg);
+  /* background-color: ; */
 }
-* {
-    text-decoration: none;
-    font-size: 30px;
-  }
+
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
 input[type="text"] {
-    width: 70%;
-    height: 52px;
-    padding: 16px 16px 5px;
-    border: 0;
-    border-radius: 8px;
-    font-size: 18px;
-    line-height: 18px;
-    background: #f5f7fa;
-    margin:20px;
+  width: 70%;
+  height: 52px;
+  padding: 26px 26px 7px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 18px;
+  background: #f5f7fa;
+  margin:20px;
 }
 input[type="password"] {
-    width: 70%;
-    height: 52px;
-    padding: 16px 16px 5px;
-    border: 0;
-    border-radius: 8px;
-    font-size: 18px;
-    line-height: 18px;
-    background: #f5f7fa;
-    margin:20px;
-}
-
-.container_reg{
-    height: 500px;
-    width: 600px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    border-color:rgb(0, 0, 0);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position:relative
-
-}
-
-.switcher{
-  color: rgb(180, 180, 180); 
+  width: 70%;
+  height: 52px;
+  padding: 26px 26px 7px;
+  border: 0;
+  border-radius: 8px;
   font-size: 18px;
-  margin: 10px;
+  line-height: 18px;
+  background: #f5f7fa;
+  margin:20px;
+}
+
+.wrapper{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #ffffff76;
-  position:absolute;
+  /* overflow: hidden; */
+  background-color: #be2121;
+  position:fixed;
   width:100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+
 
 }
 .topnav a.click {
@@ -78,6 +81,7 @@ input[type="password"] {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  display: block;
   font-size: 17px;
 
   
@@ -93,44 +97,84 @@ input[type="password"] {
   color: rgb(250, 250, 250);
 }
 
+
+
+
+.main-header{
+  position: absolute; 
+top: 50%;
+ left: 50%; 
+transform: translate(-50%, -50%);
+color:aliceblue;
+font-size: large;
+}
 .container {
   position: relative;
   padding-bottom: 100px;
 }
-.wrapper{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.link_wrapper{
-  position: relative;
-}
 
 .btn{
   display: block;
-  width: 350px;
-  height: 50px;
-  line-height: 50px;
+  animation: reveal 3s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  line-height: 80px;
   font-weight: bold;
   text-decoration: none;
   background: #cd323200;
   text-align: center;
-  color: #888787;
+  color:  #a7a7a7;
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 2px solid #a7a7a7;
   box-shadow: rgb(193, 193, 193);
   transition: all .35s;
-  margin: 10px;
+  margin: 40px;
   border-radius: 1%;
-
+  position: relative;
+  top: 10%;
 }
 
 .btn:hover{
-  width: 330px;
+  width: 175px;
   border: 3px solid #2ecc71;
   background: transparent;
   color: #2ecc71;
+
+}
+
+.down-part{
+  width: 100%;
+  height: 60px;
+  background-color:#be2121;
+  /* background-color:#be2121; */
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+
+
+}
+h1.line {
+  line-height: 1.5;
+}
+.link_wrapper{
+  position: relative;
+}
+.container_reg{
+  height: 600px;
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  border-color:rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position:relative
+
+}
+
+.switcher{
+color: rgb(180, 180, 180); 
+font-size: 18px;
+margin: 10px;
 }

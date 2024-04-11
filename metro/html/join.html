@@ -11,11 +11,10 @@
     <div class="container">
     
         <div class="topnav">
-          <a class="click" href="../html/index.html" style="padding: 0 20px 0 0;"><img src="../media/images/logo.svg" width="150" height="40" position="relative" left="0"></a>
-          <a class = "click" href="./index.html">О проекте</a>
-          <a class = "click" href="./join.html" >Войти в игру</a>
-          <a class = "click" href="./create_room.html" >Новая игра</a>
-          <a class = "click" href="./home.html" >Мой профиль</a>
+          <a class="click" href=".#" style="padding: 0 0px 0 0;" onclick="to-main"><img src="../media/images/logo.svg" width="150" height="40" position="relative" left="0"></a>
+          <a class = "click" href="#" onclick="join">Войти в игру</a>
+          <a class = "click" href="#" onclick="newg">Новая игра</a>
+          <a class = "click" href="#" onclick="me">Мой профиль</a>
         </div>
       </div>
     <center>
@@ -23,12 +22,17 @@
         <img src="../media/images/logo.svg" width="300" height="100">
     <form method="post">
         <input type="text" id="room_id" name="room_id" placeholder="Код комнаты">
-
         <input type="password" id="room_password" name="room_password" placeholder="Пароль комнаты">
-          <a href="../html/room.html/#" class = "btn"><span>Войти</span></a>
+        <a href="#" class = "btn" onclick="enter"><span>Войти</span></a>
     </form>
-      
+    
     </div>
-    </center>
+    </div>
+   </center>
+    <div class="down-part">
+      <a href="https://github.com/TheFlotingCat/Metropoly" style="left:2%; position: absolute; transform: translate(0, 25%);"><img src="../media/images/icons/github-l.png" height="40" width="40" /></a>
+      <p style="left:6%; position: absolute; top:45%; color: white;">"прога проект" 2024</p>
+    </div>
+  
 </body>
 </html>

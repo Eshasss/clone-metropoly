@@ -11,10 +11,9 @@
     <div class="container">
     
         <div class="topnav">
-          <a class="click" href="../html/index.html" style="padding: 0 20px 0 0;"><img src="../media/images/logo.svg" width="150" height="40" position="relative" left="0"></a>
-          <a class = "click" href="./index.html">О проекте</a>
-          <a class = "click" href="./register.html">Регистрация</a>
-          <a class = "click" href="./auth.html" >Вход</a>
+          <a class="click" href="#" style="padding: 0 20px 0 0;" onclick="to-main"><img src="../media/images/logo.svg" width="150" height="40" position="relative" left="0"></a>
+          <a class = "click" href="#" onclick="reg">Регистрация</a>
+          <a class = "click" href="#" onclick="auth">Вход</a>
         </div>
       </div>
     <center>
@@ -24,11 +23,16 @@
         <input type="text" id="login" name="login" placeholder="Ваш логин">
 
         <input type="password" id="password" name="password" placeholder="Ваш пароль">
-          <a href="#" class = "btn"><span>Войти</span></a>
+          <a href="#" class = "btn" onclick="enter"><span>Войти</span></a>
             <a href="../html/signin.html" class ="switcher">Ещё нет аккаунта?</a>    
     </form>
-      
+    
     </div>
     </center>
+    <div class="down-part">
+      <a href="https://github.com/TheFlotingCat/Metropoly" style="left:2%; position: absolute; transform: translate(0, 25%);"><img src="../media/images/icons/github-l.png" height="40" width="40" /></a>
+      <p style="left:6%; position: absolute; top:45%; color: white;">"прога проект" 2024</p>
+    </div>
+  
 </body>
 </html>
